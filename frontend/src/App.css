@@ -1,0 +1,478 @@
+/* ==============================
+   WDSP App Component Styles
+   Clean, Professional Theme
+   ============================== */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ========== Header ========== */
+.header {
+  text-align: center;
+  padding: 16px 0 24px;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 8px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.sub {
+  margin: 8px auto 0;
+  max-width: 550px;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* ========== Panels ========== */
+.panel {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.panel h2 {
+  margin: 0 0 16px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.panel h3 {
+  margin: 20px 0 12px 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.subpanel {
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+
+.subpanel h2 {
+  margin: 0 0 12px 0;
+  font-size: 0.875rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* ========== Layout ========== */
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  margin-top: 12px;
+}
+
+.rowWrap {
+  flex-wrap: wrap;
+}
+
+.actions {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.actions button {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+}
+
+.actions button:hover:not(:disabled) {
+  background: var(--accent-secondary);
+  border-color: var(--accent-secondary);
+}
+
+.actions button:disabled {
+  opacity: 0.7;
+}
+
+/* ========== Form Fields ========== */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.grow {
+  flex: 1;
+  min-width: 250px;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+.hint.err {
+  color: var(--error);
+}
+
+/* ========== Mode Selector ========== */
+.seg {
+  display: inline-flex;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 3px;
+  gap: 3px;
+}
+
+.segBtn {
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 8px 16px;
+  background: transparent;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.segBtn:hover:not(.active) {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.segBtn.active {
+  background: var(--accent-primary);
+  color: white;
+  font-weight: 600;
+}
+
+/* ========== Checkboxes ========== */
+.check {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.check:hover {
+  border-color: var(--border-medium);
+}
+
+.check input[type="checkbox"] {
+  width: auto;
+}
+
+/* ========== Alerts ========== */
+.alert {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-tertiary);
+  font-size: 0.875rem;
+}
+
+.alert.err {
+  background: var(--error-bg);
+  border-color: var(--error);
+  color: var(--error);
+}
+
+/* ========== Results Section ========== */
+.kv {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.kv>div {
+  padding: 14px 16px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  min-width: 100px;
+}
+
+.k {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
+}
+
+.v {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.msg {
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: var(--info-bg);
+  border: 1px solid var(--info);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+/* ========== Download Button ========== */
+.btnLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  background: var(--success-bg);
+  border: 1px solid var(--success);
+  border-radius: var(--radius-md);
+  color: var(--success);
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all var(--transition-fast);
+}
+
+.btnLink:hover {
+  background: var(--success);
+  color: white;
+  text-decoration: none;
+}
+
+/* ========== Decision Trace ========== */
+.trace {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.traceRow {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+}
+
+.traceRow.ok {
+  border-left: 3px solid var(--success);
+}
+
+.traceRow.bad {
+  border-left: 3px solid var(--error);
+  background: var(--error-bg);
+}
+
+.traceStep {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--text-primary);
+}
+
+.traceMeta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.traceDetails {
+  margin: 10px 0 0;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  overflow: auto;
+  max-height: 180px;
+}
+
+/* ========== Available Fields Section ========== */
+.availableFields {
+  margin-top: 20px;
+  padding: 20px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+}
+
+.availableFields h3 {
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.fieldDescription {
+  margin: 0 0 16px 0;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.fieldChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fieldChip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-medium);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.fieldChip:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.fieldChip.selected {
+  background: var(--info-bg);
+  border-color: var(--info);
+  color: var(--info);
+}
+
+.fieldChip.inInput {
+  background: var(--success-bg);
+  border-color: var(--success);
+  color: var(--success);
+  font-weight: 600;
+}
+
+.fieldChip.inInput:hover {
+  background: var(--error-bg);
+  border-color: var(--error);
+  color: var(--error);
+}
+
+/* Field Selection Actions */
+.fieldSelectionActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 14px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  flex-wrap: wrap;
+}
+
+.selectedCount {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.runFilteredBtn {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 10px 18px;
+}
+
+.runFilteredBtn:hover:not(:disabled) {
+  background: var(--accent-secondary);
+  border-color: var(--accent-secondary);
+}
+
+.runFilteredBtn:disabled {
+  opacity: 0.7;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  #root {
+    padding: 16px;
+  }
+
+  .header h1 {
+    font-size: 1.25rem;
+  }
+
+  .panel {
+    padding: 16px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .grow {
+    min-width: auto;
+  }
+
+  .seg {
+    flex-wrap: wrap;
+  }
+
+  .segBtn {
+    flex: 1;
+    min-width: 80px;
+    text-align: center;
+  }
+
+  .kv {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* ========== Loading Animation ========== */
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.actions button:disabled {
+  animation: pulse 1.5s ease-in-out infinite;
+}

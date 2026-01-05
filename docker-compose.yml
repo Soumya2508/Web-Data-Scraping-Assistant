@@ -1,0 +1,27 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    environment:
+      # IMPORTANT: set this to the URL where your frontend will be hosted
+      WDSP_CORS_ALLOW_ORIGINS: "http://localhost"
+      WDSP_BLOCK_PRIVATE_NETWORKS: "true"
+      WDSP_EXPORTS_DIR: "/app/exports"
+    volumes:
+      - backend_exports:/app/exports
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        # Frontend will call backend directly in production builds
+        VITE_BACKEND_URL: "http://localhost:8000"
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  backend_exports:
