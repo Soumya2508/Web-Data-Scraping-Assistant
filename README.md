@@ -10,7 +10,6 @@ FastAPI backend + Vite/React frontend for decision-based scraping:
 
 This is **good enough for student research** if you deploy it **privately** (your machine / a VM / behind authentication).
 
-If you expose it publicly, you must treat it as a security-sensitive service because users can submit URLs.
 
 ### Critical deployment safeguards
 
@@ -20,9 +19,6 @@ If you expose it publicly, you must treat it as a security-sensitive service bec
 - **CORS**: configure allowed origins via `WDSP_CORS_ALLOW_ORIGINS`.
 - **Resource limits**: scraping is slow; Selenium can be very slow/heavy.
 
-### Ethical/legal note
-
-Always follow each site’s Terms of Service and robots policy. Use reasonable rate limits and avoid scraping personal/sensitive data.
 
 ## Run locally
 
